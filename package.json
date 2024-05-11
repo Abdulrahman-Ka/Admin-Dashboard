@@ -1,5 +1,7 @@
 {
   "name": "admin-dash",
+  "version": "0.1.0",
+  "homepage": "https://abdulrahman-ka.github.io/Admin-Dashboard",
   "private": true,
   "scripts": {
     "dev": "vite",
