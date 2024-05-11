@@ -1,7 +1,11 @@
 import { AuthProvider } from "react-admin";
+// import firebase from "firebase/compat/app";
+// import "firebase/compat/auth";
 
 export const authProvider: AuthProvider = {
-  login: ({ username }) => {
+  login: ({ username, password }) => {
+    // const request = new Request()
+    if (username !== 'Amr' || password !== '123') return Promise.reject();
     localStorage.setItem("username", username);
     return Promise.resolve();
   },
@@ -23,3 +27,5 @@ export const authProvider: AuthProvider = {
   },
   getPermissions: () => Promise.resolve(),
 };
+
+export default authProvider;

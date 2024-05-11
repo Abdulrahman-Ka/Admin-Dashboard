@@ -6,9 +6,10 @@ import PostIcon from "@mui/icons-material/Book";
 import UserIcon from "@mui/icons-material/Group";
 import { Dashboard } from "./Dashboard";
 import { authProvider } from "./authProvider";
+import { MyLayout } from "./myLayout";
 
 export const App = () => (
-  <Admin authProvider={authProvider} dataProvider={dataProvider} dashboard={Dashboard} >
+  <Admin authProvider={authProvider} dataProvider={dataProvider} dashboard={Dashboard} layout={MyLayout} >
     <Resource
       name="posts"
       list={PostList}
