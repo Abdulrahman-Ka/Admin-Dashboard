@@ -1,13 +1,5 @@
 import { useMediaQuery, Theme } from "@mui/material";
-import {
-  List,
-  Datagrid,
-  TextField,
-  EmailField,
-  SimpleList,
-  RecordContext,
-  UrlField,
-} from "react-admin";
+import { List, Datagrid, TextField, EmailField, SimpleList } from "react-admin";
 import MyUrlField from "./MyUrlField";
 
 export const UserList = () => {
